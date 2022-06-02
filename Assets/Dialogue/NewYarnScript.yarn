@@ -1,0 +1,62 @@
+﻿title: Start
+tags: 
+colorID: 0
+position: 0,0
+---
+
+// sets background image to sprite called "bg_office"
+<<Scene test_background>>
+
+<<Act Gren tests3 left center green>>
+
+Gren: among us in real life, sus, sus, I said...
+
+// adds actor "Reed" with sprite "biz-guy" off-screen right, with blue-ish text label
+<<Act Reed tests1 1.25 center #226677>>
+<<Flip Reed>>
+
+// animate Reed into new position in right-half + center, within 0.5 seconds
+<<Move Reed right center 0.5>>
+
+Reed: you a sussy baka
+Gren: no
+
+// horizontally flips Gren actor to face Reed
+<<Flip Gren>>
+
+// Yarn shortcut choices, an easy way to make branching options
+-> illusion of choice
+	<<Hide Reed>>
+	<<Shake Gren 1.0>>
+	<<Act Reed tests1angry right center #226677>>
+	<<Flip Reed>>
+	Reed: FOOL, LOOK WHAT YOU'VE DONE
+-> Impactful decision
+	Gren: You have chosen...
+	Gren: Poorly
+
+// hide Reed actor and remove from the scene
+<<Hide Reed>>
+
+Gren: Ok, now I can start coding
+<<Flip Gren>>
+<<Flip Gren>>
+Narrator: spin
+<<Flip Gren>>
+<<Flip Gren>>
+<<Flip Gren>>
+<<wait 1.5>>
+<<Flip Gren>>
+Gren: spun
+<<Shake Gren>>
+Gren: shooketh
+
+<<Flip Gren>>
+<<Move Gren 1.25 center 1.0>>
+Gren: run off screen
+
+// fade to black, from 0% opacity to 100% opacity, in 2.0 seconds
+<<Fade black 0.0 1.0 2.0>>
+THE END.
+
+===
