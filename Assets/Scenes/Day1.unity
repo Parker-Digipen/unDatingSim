@@ -355,13 +355,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2678071618908635071, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
+      propertyPath: startNode
+      value: One
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678071618908635071, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: yarnProgram
       value: 
       objectReference: {fileID: 11400000, guid: 6573e22e697ab4619b968b6ce2f80243, type: 3}
     - target: {fileID: 2678071618908635071, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: 470861f017bd63843871765ccccaaf4e, type: 3}
+      objectReference: {fileID: 7545569452688597077, guid: d62bee9195daf8f4ba758318047b6ed0, type: 3}
     - target: {fileID: 2678071618908635071, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
       propertyPath: yarnScripts.Array.size
       value: 1
@@ -554,18 +558,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 979875447975149966, guid: 9e0841b82a4ebcd438730d23886e17e6, type: 3}
   m_PrefabInstance: {fileID: 662234678}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1199249020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199249018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 852c3173b607c1c429b76086998dbdfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1199249021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,10 +572,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runner: {fileID: 28204921}
   loadSprites:
-  - {fileID: 21300000, guid: 3b7b3ac175e09e748baebc87765567b0, type: 3}
-  - {fileID: 21300000, guid: 0e50d5697baa7c546a29298ef0cd884b, type: 3}
-  - {fileID: 21300000, guid: d4847395dbcc1a54cb3a33c20a3fbb96, type: 3}
-  - {fileID: 21300000, guid: b4e7258bd23529d42b0e6061cc6f07a9, type: 3}
+  - {fileID: 21300000, guid: 961cb183fcbd9cb4db3bae3edca76a2f, type: 3}
+  - {fileID: 21300000, guid: fd0f1d81fea60e14996a0d63643d84e9, type: 3}
+  - {fileID: 21300000, guid: 8d48b321cbe7747479bfad5cc433ba99, type: 3}
+  - {fileID: 21300000, guid: 1c0472a9e50487d469fd4d39bcecee79, type: 3}
+  - {fileID: 21300000, guid: d486443b7fb6c1e49998bc10cd8fbef4, type: 3}
+  - {fileID: 21300000, guid: e6b680c3f4a26ff40a3509850a77c905, type: 3}
+  - {fileID: 21300000, guid: 139b89ba892c8a64bad606a423d7f8ba, type: 3}
+  - {fileID: 21300000, guid: 510001831be38034dbd9ea28b82133ac, type: 3}
   loadAudio: []
   useResourcesFolders: 0
   defaultTint: {r: 0, g: 0, b: 0, a: 0}

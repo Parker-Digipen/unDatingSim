@@ -1,0 +1,146 @@
+﻿title: One
+tags: 
+colorID: 0
+position: 0,0
+---
+<<Scene Outside>>
+
+Narrator: It’s time for another day at Okinawa High, the school of every teenager’s dreams. The grand, historic campus is lined with cherry blossoms, providing shade over rows of crowded benches. This is the place where people discover who they truly are. In a setting like this, everyone is destined to find the love of their life.
+Narrator: You despise this place and everything it stands for. Every step you take through the elegant halls makes you sick to your stomach. This is no place to start your future. Luckily for you, it won’t be long before you leave this campus and begin your career at the prestigious Greyrock School of Combat. It’s there that you will finally complete your kendo training and become the best swordfighter in history.
+Narrator: There’s only one thing left to do before you leave; you need to break up with your harem of lovers in order to fully devote yourself to the study of the blade. As much as they care for you, they’ve never understood your passion, and their constant affection distracts you from your mastery of armed melee combat. They’re the last tie to this awful school that must be cut. This is your mission, and it starts today.
+
+<<Scene Hall>>
+
+Narrator: Your first class of the day is Theater. You thought it would provide ample opportunities to display your talent in martial arts, but the teacher rejected all of your requests for a musical rendition of “Kill Bill: Volume 2”. Fortunately, you share this class with Haily Triceratops, a recent addition to your harem. If you choose your words carefully, you should be able to shatter this relationship before lunch.
+
+<<Scene Theater>>
+
+Narrator: You walk through the door and scan the room. As you’re looking around, a pair of hands grabs your waist. Before you can deliver an elbow strike and make your retreat, the attacker releases their grip and runs in front of you.
+
+<<Act Haily Haily_Triceratops_Neutral left Center>>
+
+Haily: “g-good morning!”
+Narrator: As always, Haily undermines your prowess in close-quarters combat.
+
+<<Hide Halyey>>
+<<Act Haily Haily_Happy left Center>>
+
+Haily: “It’s almost time for our big performance of Twelfth Night! Y-You’re doing great in your role so far! Nobody here could ever beat your performance of Bush #3!”
+Player: That wasn’t me, I just put a fake bush there so I could skip class.
+
+<<Shake Haily>>
+
+Haily: “W-wow, I couldn’t even tell the difference. You’re a true artist!”
+
+//path 1
+-> I didn’t do a good job of it. I forgot all the leaves on one side and accidentally painted it red. I think you’re losing your eyesight.
+    <<Hide Haily>>
+    <<Act Haily Haily_Triceratops_Neutral left Center>>
+
+    Haily: “R-r-really..? Oh no, i-it’s happening again…”
+
+    //you’re blind
+    -> You’re probably going to need another round of cataract treatment. I can’t selfishly take up your time when you need it for surgical procedures.
+        <<Hide Haily>>
+        <<Act Haily Haily_Triceratops_Sad left Center>>
+        Haily: “B-but I can’t just leave you behind! Who will help you get in your bush costume for the next dress rehearsal?”
+
+        //break up
+        -> Forget the play. All that matters right now is your health, even if that means we part ways. Now get over to the nurse’s office, I shouldn’t take up any more of your time.
+            <<Hide Haily>>
+            <<Act Haily Haily_Triceratops_Neutral left Center>>
+
+            Haily: “Y-y-you’re probably right, I better get moving. I-I’m sorry it had to end like this. Even if I go blind one day, I’ll never forget your beautiful face!”
+
+            <<Hide Haily>>
+
+            Narrator: You wave to her as she runs down the hall, left before the bell rings and classes are dismissed. That’s one off the list.
+
+        //break up
+        -> But I’ve never put that costume on, remember? I think your memory’s going too. This isn’t a good sign.
+            <<Hide Haily>>
+
+            Narrator: A look of terror crosses her face before she quickly scribbles your name on a piece of paper and runs out of the room. That’s one off the list.
+
+    //girlboss it up
+    -> It’s probably because of that sandbag that fell on your head earlier.
+        <<Hide Haily>>
+        <<Act Haily Haily_Triceratops_Neutral left center>>
+
+        Haily: “W-w-wait… I don’t remember that…”
+
+        //stay together
+        -> I bet Lars did that on purpose. He’s been trying to get you injured so he can take your role in tech crew.
+            <<Hide Haily>>
+            <<Act Haily Haily_Triceratops_Mad left center>>
+
+            Haily: “R-really? Wait, t-that’s why he brought peanut butter cookies for the class earlier. He tried to poison me! I can’t believe I didn’t realize sooner! When I see him, I’m gonna..I-I’m gonna…-“
+            Narrator: At that moment, Lars walks in with a late slip and a bouquet of flowers, one labeled for each member of the cast. 
+            
+            <<Act Lars Lars Left Center>>
+            
+            Narrator: Before he can speak, Haily tackles him to the floor and starts yelling childish insults at him.
+
+            <<Shake Lars>>
+            <<Shake Haily>>
+
+            Narrator: Unfortunately, you are not able to break up with her before she is dragged away by staff members. You have failed.
+            
+            <<Hide Lars>>
+            <<Hide Haily>>
+
+        //break up
+        -> That’s weird, it was a pretty big deal. I think your memory’s going too. This isn’t a good sign.
+            <<Hide Haily>>
+
+            Narrator: A look of terror crosses her face before she quickly scribbles your name on a piece of paper and runs out of the room. That’s one off the list.
+
+//path 2
+-> deeply insulting to me that you couldn’t tell me apart from a fake bush.
+    <<Hide Haily>>
+    <<Act Haily Haily_Triceratops_Sad left center>>
+
+    Haily: “O-o-oh… I’m s-sorry.. I d-didn’t mean to make fun of how you look.”
+
+    //slow conclusion
+    -> Do you realize how offensive it is to compare me to shrubbery? My father fought in the war because he believed we’d be accepted here. Clearly that isn’t the case.
+            <<Hide Haily>>
+            <<Act Haily Haily_Triceratops_Neutral left center>>
+            Haily: “B-but I thought you didn’t have a father…?”
+
+            //break up
+            -> Exactly. He died on the front lines hoping that we could live in a world of equality. If you’ll excuse me, I need to go pack my bags. Hopefully there’s some place out there that appreciates my identity.
+                <<Hide Haily>>
+
+                Narrator: You leave the room as Haily collapses in anguish. Hopefully she’s learned a valuable lesson about the harmful effects of judging people by their appearances. That’s one off the list.
+
+            //stay together
+            -> He was here just yesterday to help paint the sets. You must have thought he was a bush as well. You need to take a serious look at yourself and identify your privilege.
+                <<Hide Haily>>
+                <<Act Haily Haily_Triceratops_Mad left center>>
+                <<Shake Haily>>
+
+                Haily: “I-I don’t know where to start, but for you, I’ll do whatever it takes to improve myself!”
+
+                <<Hide Haily>>
+
+                Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
+            
+        //quick conclusion
+        -> If we’re going to stay together, you seriously need to improve your language towards others
+            <<Hide Haily>>
+            <<Act Haily Haily_Triceratops_Mad left center>>
+            <<Shake Haily>>
+
+            Haily: “I-I understand. For you, I’ll do whatever it takes to improve myself!”
+
+            <<Hide Haily>>
+
+            Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
+
+Narrator: And thus concludes night one
+
+// fade to black, from 0% opacity to 100% opacity, in 2.0 seconds
+<<Fade black 0.0 1.0 2.0>>
+
+===
