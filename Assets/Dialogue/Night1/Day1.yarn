@@ -34,14 +34,27 @@ Haily: “W-wow, I couldn’t even tell the difference. You’re a true artist!�
 
 //path 1
 -> I didn’t do a good job of it. I forgot all the leaves on one side and accidentally painted it red. I think you’re losing your eyesight.
-
+    <<jump Path1>>
+//path 2
+-> deeply insulting to me that you couldn’t tell me apart from a fake bush.
+    <<jump Path2>>
+===
+title: Path1
+---
     //<<Move Haily 1.25 center -1.0>>
     <<Act Haily Haily_Triceratops_Neutral left Center>>
 
     Haily: “R-r-really..? Oh no, i-it’s happening again…”
     //you’re blind
     -> You’re probably going to need another round of cataract treatment. I can’t selfishly take up your time when you need it for surgical procedures.
-        //<<Move Haily 1.25 center -1.0>>
+        <<jump blind>>
+    //girlboss it up
+    -> It’s probably because of that sandbag that fell on your head earlier.
+        <<jump girlboss>>
+===
+title:blind
+---
+//<<Move Haily 1.25 center -1.0>>
         <<Act Haily Haily_Triceratops_Sad left Center>>
         Haily: “B-but I can’t just leave you behind! Who will help you get in your bush costume for the next dress rehearsal?”
 
@@ -49,29 +62,39 @@ Haily: “W-wow, I couldn’t even tell the difference. You’re a true artist!�
         -> Forget the play. All that matters right now is your health, even if that means we part ways. Now get over to the nurse’s office, I shouldn’t take up any more of your time.
             //<<Move Haily 1.25 center -1.0>>
             <<Act Haily Haily_Triceratops_Neutral left Center>>
-
             Haily: “Y-y-you’re probably right, I better get moving. I-I’m sorry it had to end like this. Even if I go blind one day, I’ll never forget your beautiful face!”
-            
             <<Move Haily 1.25 center -1.0>>
-
             Narrator: You wave to her as she runs down the hall, left before the bell rings and classes are dismissed. That’s one off the list.
-
+            <<jump end>>
         //break up
         -> But I’ve never put that costume on, remember? I think your memory’s going too. This isn’t a good sign.
             <<Move Haily 1.25 center -1.0>>
 
             Narrator: A look of terror crosses her face before she quickly scribbles your name on a piece of paper and runs out of the room. That’s one off the list.
+            <<jump end>>
+===
+title:girlboss
+---
+//<<Move Haily 1.25 center -1.0>>
+    <<Act Haily Haily_Triceratops_Neutral left center>>
 
-    //girlboss it up
-    -> It’s probably because of that sandbag that fell on your head earlier.
-        //<<Move Haily 1.25 center -1.0>>
-        <<Act Haily Haily_Triceratops_Neutral left center>>
+    Haily: “W-w-wait… I don’t remember that…”
 
-        Haily: “W-w-wait… I don’t remember that…”
+    //stay together
+    -> I bet Lars did that on purpose. He’s been trying to get you injured so he can take your role in tech crew.
+            <<jump Lars>>
+            <<jump end>>
 
-        //stay together
-        -> I bet Lars did that on purpose. He’s been trying to get you injured so he can take your role in tech crew.
-            //<<Move Haily 1.25 center -1.0>>
+    //break up
+    -> That’s weird, it was a pretty big deal. I think your memory’s going too. This isn’t a good sign.
+            <<Move Haily 1.25 center -1.0>>
+
+            Narrator: A look of terror crosses her face before she quickly scribbles your name on a piece of paper and runs out of the room. That’s one off the list.
+            <<jump end>>
+===
+title: Lars
+---
+//<<Move Haily 1.25 center -1.0>>
             <<Act Haily Haily_Triceratops_Mad left center>>
 
             Haily: “R-really? Wait, t-that’s why he brought peanut butter cookies for the class earlier. He tried to poison me! I can’t believe I didn’t realize sooner! When I see him, I’m gonna..I-I’m gonna…-“
@@ -88,15 +111,10 @@ Haily: “W-wow, I couldn’t even tell the difference. You’re a true artist!�
             
             <<Move Lars 1.25 center -1.0>>
             <<Move Haily 1.25 center -1.0>>
-
-        //break up
-        -> That’s weird, it was a pretty big deal. I think your memory’s going too. This isn’t a good sign.
-            <<Move Haily 1.25 center -1.0>>
-
-            Narrator: A look of terror crosses her face before she quickly scribbles your name on a piece of paper and runs out of the room. That’s one off the list.
-
-//path 2
--> deeply insulting to me that you couldn’t tell me apart from a fake bush.
+            <<jump end>>
+===
+title: Path2
+---
     <<Move Haily 1.25 center -1.0>>
     <<Act Haily Haily_Triceratops_Sad left center>>
 
@@ -104,43 +122,65 @@ Haily: “W-wow, I couldn’t even tell the difference. You’re a true artist!�
 
     //slow conclusion
     -> Do you realize how offensive it is to compare me to shrubbery? My father fought in the war because he believed we’d be accepted here. Clearly that isn’t the case.
-            //<<Move Haily 1.25 center -1.0>>
-            <<Act Haily Haily_Triceratops_Neutral left center>>
-            Haily: “B-but I thought you didn’t have a father…?”
+        <<jump slow>>
+    //quick conclusion
+    -> If we’re going to stay together, you seriously need to improve your language towards others
+        <<jump quick>>
+===
+title: slow
+---
+//<<Move Haily 1.25 center -1.0>>
+    <<Act Haily Haily_Triceratops_Neutral left center>>
+    Haily: “B-but I thought you didn’t have a father…?”
 
-            //break up
-            -> Exactly. He died on the front lines hoping that we could live in a world of equality. If you’ll excuse me, I need to go pack my bags. Hopefully there’s some place out there that appreciates my identity.
-                <<Move Haily 1.25 center -1.0>>
+    //break up
+    -> Exactly. He died on the front lines hoping that we could live in a world of equality. If you’ll excuse me, I need to go pack my bags. Hopefully there’s some place out there that appreciates my identity.
+        <<Move Haily 1.25 center -1.0>>
 
-                Narrator: You leave the room as Haily collapses in anguish. Hopefully she’s learned a valuable lesson about the harmful effects of judging people by their appearances. That’s one off the list.
+        Narrator: You leave the room as Haily collapses in anguish. Hopefully she’s learned a valuable lesson about the harmful effects of judging people by their appearances. That’s one off the list.
+        <<jump end>>
+    //stay together
+    -> He was here just yesterday to help paint the sets. You must have thought he was a bush as well. You need to take a serious look at yourself and identify your privilege.
+        //<<Move Haily 1.25 center -1.0>>
+        <<Act Haily Haily_Triceratops_Mad left center>>
+        <<Shake Haily>>
 
-            //stay together
-            -> He was here just yesterday to help paint the sets. You must have thought he was a bush as well. You need to take a serious look at yourself and identify your privilege.
-                //<<Move Haily 1.25 center -1.0>>
-                <<Act Haily Haily_Triceratops_Mad left center>>
-                <<Shake Haily>>
+        Haily: “I-I don’t know where to start, but for you, I’ll do whatever it takes to improve myself!
+        <<Move Haily 1.25 center -1.0>>
 
-                Haily: “I-I don’t know where to start, but for you, I’ll do whatever it takes to improve myself!”
+        Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
+        <<jump end>>
+===
+title: quick
+---
+//<<Move Haily 1.25 center -1.0>>
+    <<Act Haily Haily_Triceratops_Mad left center>>
+    <<Shake Haily>>
 
-                <<Move Haily 1.25 center -1.0>>
+    Haily: “I-I understand. For you, I’ll do whatever it takes to improve myself!”
 
-                Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
-            
-        //quick conclusion
-        -> If we’re going to stay together, you seriously need to improve your language towards others
-            //<<Move Haily 1.25 center -1.0>>
-            <<Act Haily Haily_Triceratops_Mad left center>>
-            <<Shake Haily>>
+    <<Move Haily 1.25 center -1.0>>
 
-            Haily: “I-I understand. For you, I’ll do whatever it takes to improve myself!”
-
-            <<Move Haily 1.25 center -1.0>>
-
-            Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
-
+    Narrator: Before you can respond, Haily runs off to find literature that can educate her on social awareness, leaving you without another opportunity to speak to her. You have failed.
+    <<jump end>>
+===
+title: end
+---
 Narrator: And thus concludes night one
 
 // fade to black, from 0% opacity to 100% opacity, in 2.0 seconds
 <<Fade black 0.0 1.0 2.0>>
+===
+//example node
+title:example
+---
+//char speaks
+Char: text
+Narrator: text
 
+-> response 2
+
+    <<jump node>>
+-> response 1
+    <<jump node>>
 ===
